@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://api.smdservers.net/CCWs_3.5/CallCenterWs.asmx?wsdl" filename="CallCenterWs.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://api.smdservers.net/CCWs_3.5/CallCenterWs.asmx?disco" filename="CallCenterWs.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SSWebDevTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SSWebDevTest_net_smdservers_api_CallCenterWs" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://api.smdservers.net/CCWs_3.5/CallCenterWs.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Waitlist_Rent_Reserve";
+}
+@model SSWebDevTest.Models.UnitFunctions
+
+<html>
+<head>
+    <title>Waitlist/Rent/Reservation</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Add Customer</legend>
+            <div>
+                <label for="EmailAddress">Email Address:</label>
+                <input type="text" name="EmailAddress" value="" />
+            </div>
+            <div>
+                <label for="Password">Password:</label>
+                <input type="text" name="Password" value="" />
+            </div>
+            <div>
+                <label for="UnitID">UnitID:</label>
+                <input type="text" name="UnitID" value="" />
+            </div>
+            <div>
+                <label for="ReservationComment">Reservation Comment:</label>
+                <input type="text" name="ReservationComment" value="" />
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
+@Model.sLocationCode
+@{
+    if (IsPost)
+    {
+        string emailAddress = Request.Form["emailaddress"];
+        string password = Request.Form["password"];
+        string rComment = Request.Form["reservationcomment"];
+        int unitID = Request.Form["unitid"].AsInt();
+        string tenantID = Model.Login(emailAddress, password);
+
+        <text>
+            You entered: <br />
+            Company Name: @emailAddress <br />
+            Contact Name: @password <br />
+            Employee Count: @unitID <br />
+            Reservation Comment: @rComment <br />
+            is this thing working? @tenantID <br />
+        </text>
+    }
+}
+  
